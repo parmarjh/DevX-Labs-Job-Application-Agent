@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevX Labs — Job Application Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">⚡</div>
+        <div class="brand-text">
+          <h2>DevX Labs</h2>
+          <span>Hiring Agent Portal</span>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <button class="nav-item active" id="nav-overview">
+          <span class="icon">📊</span> Overview
+        </button>
+        <button class="nav-item" id="nav-profile">
+          <span class="icon">👤</span> Candidate Profile
+        </button>
+        <button class="nav-item" id="nav-mcp">
+          <span class="icon">🔌</span> MCP Pipeline
+        </button>
+        <button class="nav-item" id="nav-logs">
+          <span class="icon">📝</span> Session Audit
+        </button>
+      </nav>
+
+      <div class="token-status">
+        <div class="status-indicator live"></div>
+        <div class="status-info">
+          <small>Application Status</small>
+          <strong>Submitted & Verified</strong>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="top-header">
+        <div class="header-title">
+          <h1>Data Scientist Application Dashboard</h1>
+          <p>Managed via Model Context Protocol (MCP) & Automated AI Orchestration</p>
+        </div>
+        <div class="header-badges">
+          <span class="badge badge-success">✓ Token Finalized</span>
+          <span class="badge badge-primary">S3 Synced</span>
+        </div>
+      </header>
+
+      <!-- Stats Grid -->
+      <section class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon purple">🎯</div>
+          <div class="stat-details">
+            <span class="label">Target Role</span>
+            <h3>Data Scientist</h3>
+            <small>DevX Labs — Client Modelling Layer</small>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon blue">💼</div>
+          <div class="stat-details">
+            <span class="label">Candidate</span>
+            <h3>Jatinkumar Parmar</h3>
+            <small>Senior AI Architect (10+ Yrs Exp)</small>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon green">📄</div>
+          <div class="stat-details">
+            <span class="label">Resume PDF</span>
+            <h3>Jatincv.pdf</h3>
+            <small>Uploaded to S3 Bucket (ap-south-1)</small>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon amber">⚡</div>
+          <div class="stat-details">
+            <span class="label">Screening Questions</span>
+            <h3>0 Pending</h3>
+            <small>Auto-cleared & Verified</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Columns -->
+      <div class="content-columns">
+        <!-- Left Column: Profile Card & Skills -->
+        <div class="column-card">
+          <div class="card-header">
+            <h3>👤 Candidate Profile & Alignment</h3>
+            <span class="tag">Verified Candidate</span>
+          </div>
+
+          <div class="profile-preview">
+            <div class="avatar">JP</div>
+            <div class="avatar-meta">
+              <h4>ER, JATINKUMAR PARMAR</h4>
+              <p>parmarjatin4911@gmail.com | +91-70166-81896</p>
+              <div class="social-links">
+                <a href="https://linkedin.com/in/jhparmar" target="_blank" class="link-btn">LinkedIn</a>
+                <a href="https://github.com/jhparmar" target="_blank" class="link-btn">GitHub</a>
+                <a href="https://shivaiaillp.lovable.app" target="_blank" class="link-btn">Portfolio</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="summary-box">
+            <strong>Professional Bio:</strong>
+            <p>Accomplished AI Architect with 10+ years of expertise, specializing in designing and scaling production-grade enterprise AI solutions. Proven leader in LLM orchestration, RAG pipelines, and multi-agent workflows across AWS SageMaker, GCP Vertex AI, and Azure.</p>
+          </div>
+
+          <div class="skills-section">
+            <h4>Core Competencies</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Generative AI</span>
+              <span class="skill-tag">LLMs & Multi-Agent</span>
+              <span class="skill-tag">LangChain / LangGraph</span>
+              <span class="skill-tag">RAG Architectures</span>
+              <span class="skill-tag">Python & SQL</span>
+              <span class="skill-tag">MLOps & Vertex AI</span>
+              <span class="skill-tag">AWS SageMaker</span>
+              <span class="skill-tag">PyTorch & Transformers</span>
+              <span class="skill-tag">Docker & Kubernetes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: MCP Pipeline Execution -->
+        <div class="column-card">
+          <div class="card-header">
+            <h3>⚙️ MCP Protocol Pipeline Steps</h3>
+            <span class="tag tag-success">100% Complete</span>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item done">
+              <div class="timeline-dot">✓</div>
+              <div class="timeline-body">
+                <strong>1. get_my_profile</strong>
+                <p>Retrieved target position requirements and candidate schema from DevX.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item done">
+              <div class="timeline-dot">✓</div>
+              <div class="timeline-body">
+                <strong>2. update_my_profile (Structured Data)</strong>
+                <p>Synced experience (Trizen, Regenerative AI, SHIVA AI), education (IIT Madras, MGU), and skills.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item done">
+              <div class="timeline-dot">✓</div>
+              <div class="timeline-body">
+                <strong>3. get_resume_upload_url & S3 PUT</strong>
+                <p>Streamed `Jatincv.pdf` (113 KB) directly to S3 storage bucket.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item done">
+              <div class="timeline-dot">✓</div>
+              <div class="timeline-body">
+                <strong>4. save_session_log (Audit Trail)</strong>
+                <p>Generated full conversation transcript and uploaded audit trail to DevX.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item done">
+              <div class="timeline-dot">✓</div>
+              <div class="timeline-body">
+                <strong>5. submit_application</strong>
+                <p>Finalized application payload and successfully committed token.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
